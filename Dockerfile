@@ -6,4 +6,5 @@ cd client_golang/examples/random && go get -d && go build
 WORKDIR /go/client_golang/examples/random
 EXPOSE 8080 8081 8082
 COPY entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/entrypoint.sh
 ENTRYPOINT ['/usr/local/bin/entrypoint.sh']
