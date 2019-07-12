@@ -7,4 +7,5 @@ ENV WORKSPACE /go/client_golang/examples/random
 EXPOSE 8080 8081 8082
 COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
-ENTRYPOINT ['/usr/local/bin/entrypoint.sh']
+#ENTRYPOINT ['/usr/local/bin/entrypoint.sh']
+CMD ['/bin/bash', '/usr/local/bin/entrypoint.sh']
