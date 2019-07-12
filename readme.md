@@ -3,3 +3,9 @@
 
 - [prometheus-simple-random-client](./golang_client)
    - [完全参考](https://prometheus.io/docs/prometheus/latest/getting_started/)
+
+
+## docker 使用
+```
+docker run -itd --name=random -P actanble/prometheus-client-random entrypoint.sh 
+```
